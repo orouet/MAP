@@ -1,0 +1,82 @@
+#Identification {
+
+	margin : 200px auto;
+	
+	width : 400px;
+	
+	background-color: #eaeaea;
+
+}
+
+table.identification {
+
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	
+	width : 100%;
+	
+	border-width : 0px;
+	
+	font-size : 12px;
+
+}
+
+table.identification th {
+
+	padding : 5px 0px 5px 0px;
+	
+	text-align : center;
+	
+	background-color : #2e4f6e;
+	color : #eeeeee;
+
+}
+
+table.identification td {
+
+	padding : 5px 5px 5px 5px;
+	
+	text-align : left;
+	
+	background-color: inherit;
+	color: inherit;
+
+}
+
+table.identification td.champs {
+
+	width : 145px;
+	
+	padding : 5px 5px 5px 0px;
+	
+	text-align : right;
+
+}
+
+table.identification td.reponse {
+
+	width : 245px;
+	
+	padding : 5px 0px 5px 5px;
+	
+	text-align : left;
+
+}
+
+table.identification td.reponse input{
+
+	width : 200px;
+
+}
+
+table.identification td.reponse select{
+
+	width : 200px;
+
+}
+
+table.identification td.valide {
+
+	text-align : center;
+
+}

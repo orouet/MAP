@@ -1,0 +1,284 @@
+body {
+	font-family : 'Roboto', sans-serif;
+	font-size : 20px;
+	line-height : 22px;
+	font-family : 'PT Sans', sans-serif;
+	font-size : 14px;
+	line-height : 16px;
+	background-color : #ffffff;
+	background-image : url('../images/background1-2000x1334.jpg');
+}
+
+#Page {
+	background-color : transparent;
+}
+
+#Etapes {
+	background-color : #333940;
+}
+
+#Album {
+	background-color : #333940;
+}
+
+#Selection {
+	background-color : #333940;
+}
+
+#Compte {
+	position:fixed;
+	margin:130px 20px 0 0;
+	width: 310px;
+}
+
+#Compte .fenetre {
+	padding: 8px;
+}
+
+#Compte .fenetre .bloc {
+	background-color: #272b31;
+	/*border-color: #1f2227;
+	border-style: solid;
+    border-width: 1px;*/
+}
+
+/*#Compte .fenetre .bloc .titre {
+	font-size: 20px;
+    padding: 0 0 5px 0;
+    text-align: center;
+    color: #e9d000;
+    font-weight: bold;
+}*/
+
+.colonne {
+	width : 200px;
+	background-color : #333940;
+}
+
+.fenetre {
+	background-color : #333940;
+	color : #ffffff;
+}
+
+.fenetre > .titre {
+	padding: 10px 20px;
+	font-size : 16px;
+	font-weight : bold;
+	color : #e9d000;
+	text-align : center;
+}
+
+.photo {
+	border-color : #1f2227;
+	border-radius: 3px;
+	background-color: #272b31;
+	color : white;
+	cursor : pointer;
+}
+
+.photo:hover {
+  border: 1px solid #e9d000;
+}
+
+.selectionnee {
+	background-color : #e9d000;
+	color : #272b31;
+	border-color : #e9d000;
+}
+
+.entete {
+	background-color : #272b31;
+	background-color : #333940;
+}
+
+.entete > .slogan {
+	border-color : #4B4E53;
+}
+
+a button {
+	border : medium none !important;
+	border-radius : 3px;
+	color : #272b31;
+	font-size: 13px;
+	font-weight: 900 !important;
+	margin: 0 5px 4px;
+	padding: 0 10px 0 20px;
+	min-height: 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*display: inline-block;
+	position: relative;
+	text-align: center;*/
+	background-color: #e9d000;
+}
+a:hover button {
+	background-color: #333940;
+	transition: background 250ms ease 0s, color 250ms ease 0s;
+	color: #ffffff;
+}
+
+.bloc a button {
+	background: #e9d000 url(../images/poubelle_32x32.png) no-repeat center left;
+}
+.bloc a:hover button {
+	background: #333940 url(../images/poubelle_survol_32x32.png) no-repeat center left;
+}
+
+.photo .titre {
+    float: left;
+}
+
+.photo .action {
+    float: right;
+}
+
+/******************
+BARRE DE NAVIGATION
+******************/
+
+.etape a {
+	width : 290px;
+	background-color: #272b31;
+	border: 2px solid #1f2227;
+	border-radius: 3px;
+	height: 52px;
+}
+.etape a:hover {
+	cursor: not-allowed;
+}
+.etape a span.titre {
+	text-transform: uppercase;
+	padding: 7px 0px 0px 46px;
+	background-color: transparent;
+	color: #e9d000;
+	font-size: 14px;
+}
+.etape a span.description {
+	background-color: transparent;
+	color: #333940;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 3px 0px 0px 46px;
+}
+
+.active a {
+  background-color: #e9d000 !important;
+}
+.active a:hover {
+	cursor : default;
+}
+.active a span.titre { 
+  color: #272b31;
+}
+.active a span.description {
+  color: #ffffff;
+}
+
+.disponible a {
+  background-color: #272b31 !important;
+}
+.disponible a span.titre {
+  color: #e9d000;
+}
+.disponible a span.description {
+  color: #ffffff;
+}
+.disponible a:hover {
+  border-bottom: 2px solid #e9d000;
+  background-color: #272b31;
+  cursor : pointer;
+}
+
+.icone_etape1 {
+  background: transparent url(../images/etape1.png) no-repeat center left;
+}
+.active .icone_etape1 {
+  background: transparent url(../images/etape1_active.png) no-repeat center left;
+}
+.disponible .icone_etape1 {
+  background: transparent url(../images/etape1_disponible.png) no-repeat center left;
+}
+.disponible:hover .icone_etape1 {
+  background: transparent url(../images/etape1_disponible_survol.png) no-repeat center left;
+}
+.icone_etape2 {
+  background: transparent url(../images/etape2.png) no-repeat center left;
+}
+.active .icone_etape2 {
+  background: transparent url(../images/etape2_active.png) no-repeat center left;
+}
+.disponible .icone_etape2 {
+  background: transparent url(../images/etape2_disponible.png) no-repeat center left;
+}
+.disponible:hover .icone_etape2 {
+  background: transparent url(../images/etape2_disponible_survol.png) no-repeat center left;
+}
+.icone_etape3 {
+  background: transparent url(../images/etape3.png) no-repeat center left;
+}
+.active .icone_etape3 {
+  background: transparent url(../images/etape3_active.png) no-repeat center left;
+}
+.disponible .icone_etape3 {
+  background: transparent url(../images/etape3_disponible.png) no-repeat center left;
+}
+.disponible:hover .icone_etape3 {
+  background: transparent url(../images/etape3_disponible_survol.png) no-repeat center left;
+}
+.icone_etape4 {
+  background: transparent url(../images/etape4.png) no-repeat center left;
+}
+.active .icone_etape4 {
+  background: transparent url(../images/etape4_active.png) no-repeat center left;
+}
+.disponible .icone_etape4 {
+  background: transparent url(../images/etape4_disponible.png) no-repeat center left;
+}
+.disponible:hover .icone_etape4 {
+  background: transparent url(../images/etape4_disponible_survol.png) no-repeat center left;
+}
+.icone_etape5 {
+  background: transparent url(../images/etape5.png) no-repeat center left;
+}
+.active .icone_etape5 {
+  background: transparent url(../images/etape5_active.png) no-repeat center left;
+}
+.disponible .icone_etape5 {
+  background: transparent url(../images/etape5_disponible.png) no-repeat center left;
+}
+.disponible:hover .icone_etape5 {
+  background: transparent url(../images/etape5_disponible_survol.png) no-repeat center left;
+}
+
+.bloc .titre {
+	margin: 0 5px 0 5px;
+	padding: 3px 0 3px 0;
+}
+.bloc .texte {
+	margin: 0 5px 0 5px;
+	padding: 3px 0 3px 0;
+}
+
+/************
+CHOIX TIRAGES
+************/
+
+.commande td.libelle .gamme {
+    color: #e9d000;
+    font-weight: bold;
+    text-align: left;
+}
+
+.commande td.montant {
+    font-weight: bold;
+}
+
+.commande td.quantite input {
+	border: 1px solid #1f2227;
+	background-color: #272b31;
+	border-radius: 3px;
+	color: #ffffff;
+	text-align: right;
+}

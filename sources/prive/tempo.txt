@@ -1,0 +1,31 @@
+// Navigation dans les étapes
+// $APP_Sortie .= '<div id="EtapesNavigation" class="" style="">' . "\n";
+
+// $APP_Sortie .= '<div class="fenetre">' . "\n";
+
+// $url = '#';
+// $APP_Sortie .= '<div class="" style="padding:5px 0px 0px 0px;font-weight:normal;text-align:center;">' . "\n";
+// $APP_Sortie .= '<a href="' . $url . '" style="">';
+// $APP_Sortie .= '<button style="width:200px;">' . "Etape précédente" . '</button>' . "\n";
+// $APP_Sortie .= '</a>' . "\n";
+// $APP_Sortie .= '</div>' . "\n";
+
+// $url = '#';
+
+// if ($selections > 0) {
+
+	// $url = URL_INDEX . '?app=panier.selection.afficher';
+
+// }
+
+// $APP_Sortie .= '<div class="" style="padding:5px 0px 0px 0px;font-weight:normal;text-align:center;">' . "\n";
+// $APP_Sortie .= '<a href="' . $url . '" style="">';
+// $APP_Sortie .= '<button style="width:200px;">' . "Etape suivante" . '</button>' . "\n";
+// $APP_Sortie .= '</a>' . "\n";
+// $APP_Sortie .= '</div>' . "\n";
+
+
+// $APP_Sortie .= '</div>' . "\n";
+
+// $APP_Sortie .= '</div>' . "\n";
+// Navigation dans les étapes

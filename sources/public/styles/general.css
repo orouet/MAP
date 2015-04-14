@@ -1,0 +1,524 @@
+/* SUPER CONTENEURS */
+html {
+
+	height : 100%;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+
+}
+
+
+body {
+
+	height : 100%;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	
+	font-family : Verdana;
+	font-size : 10pt;
+	font-weight : normal;
+	
+	background-color : #ffffff;
+
+}
+
+
+/* CONTENEURS */
+form {
+
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+
+}
+
+
+table {
+
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+
+}
+
+
+ul {
+
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 15px;
+	
+	list-style-type : none;
+
+}
+
+
+a {
+
+	text-decoration : none;
+	
+	color : black;
+
+}
+
+
+a:hover {
+
+	color : black;
+
+}
+
+
+/* SOUS-CONTENEURS */
+li {
+
+	display : block;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	
+	vertical-align : middle;
+
+}
+
+
+span {
+
+	display : inline-block;
+
+}
+
+
+tr {
+
+	vertical-align : top;
+
+}
+
+
+
+/* */
+img {
+
+	border-width : 0px;
+
+}
+
+/* MISE EN FORME GENERALE */
+h1 {
+
+	padding : 20px 0px 5px 0px;
+	margin : 0px 0px 0px 0px;
+	
+	font-size : 24px;
+	font-weight : bold;
+
+}
+
+h2 {
+
+	padding : 10px 0px 5px 0px;
+	margin : 0px 0px 0px 0px;
+	
+	font-size : 20px;
+	font-weight : bold;
+
+}
+
+h3 {
+
+	padding : 5px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	
+	font-size : 18px;
+	font-weight : bold;
+
+}
+
+h4 {
+
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	
+	font-size : 16px;
+	font-weight : bold;
+
+}
+
+
+/* Classes génériques */
+br.nettoyeur {
+
+	clear : both;
+
+}
+
+.fenetre {
+
+	padding : 10px 20px 10px 20px;
+	
+	background-color:#eeeeee;
+
+}
+
+.fenetre > .titre {
+
+	padding : 10px 20px;
+	
+	font-size : 16px;
+	font-weight : bold;
+	
+	text-align : center;
+
+}
+
+.fenetre > h1 {
+
+	padding : 5px 0px 0px 10px;
+	
+	font-size : 20px;
+	font-weight : bold;
+	
+	text-align : left;
+	
+	color : #e9d000;
+
+}
+
+.fenetre > h2 {
+
+	padding : 5px 0px 10px 10px;
+	
+	font-size : 14px;
+	font-weight : normal;
+	
+	text-align : left;
+
+}
+
+
+/* ID */
+#Entete {
+
+	position : fixed;
+	
+	top : 0px;
+	left : 0px;
+	right : 0px;
+	
+	width : 100%;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 5px 0px 5px 0px;
+
+}
+
+#Squelette {
+
+	width : 100%;
+
+}
+
+#Page {
+
+	width : 850px;
+	
+	margin : 20px auto 20px auto;
+	padding : 0px 10px 0px 10px;
+	
+	background-color : pink;
+
+}
+
+#Etapes {
+
+	margin : 0px 0px 0px 0px;
+	padding : 2px 4px 2px 4px;
+	
+	background-color : #eeeeee;
+
+}
+
+#Album {
+
+	background-color : #eeeeee;
+
+}
+
+#Selection {
+
+	width : 100%;
+
+}
+
+#Compte {
+
+	top : 0px;
+	right : 0px;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+
+}
+
+#EtapesNavigation {
+
+	bottom : 0px;
+	right : 0px;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+
+}
+
+
+/* Classes */
+table.squelette {
+
+	height : 100%;
+	
+	margin : 70px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	
+	border-width : 0px;
+	
+	border-collapse : collapse;
+
+}
+
+table.squelette tr {
+
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	
+	vertical-align : top;
+
+}
+
+table.squelette td {
+
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	
+	border-width : 0px;
+	
+	vertical-align : top;
+
+}
+
+table.squelette td.gauche {
+
+	width : auto;
+
+}
+
+table.squelette td.droite {
+
+	width : 260px;
+
+}
+
+table.squelette td.droite .colonne {
+
+	width : 310px;
+	height : auto;
+	margin : 20px 10px 0px 0px;
+
+}
+
+.entete {
+
+	background-color : #eeeeee;
+
+}
+
+.entete > .logo {
+
+	float : left;
+	
+	padding : 8px 15px 5px 20px;
+	margin : 0px 0px 0px 0px;
+
+}
+
+.entete > .slogan {
+
+	float : left;
+	
+	height : 25px;
+	
+	margin : 23px 0px 20px 0px;
+	padding : 0px 0px 0px 15px;
+	
+	font-size : 12px;
+	
+	border-width : 0px 0px 0px 1px;
+	
+	line-height : 25px;
+	
+	vertical-align : middle;
+	
+	border-style : solid;
+	border-color : #ffffff;
+	color : white;
+
+}
+
+.entete > .menu {
+
+	float : right;
+	
+	margin : 18px 20px 17px 0px;
+
+}
+
+.entete > .menu > a {
+
+	display : block;
+	
+	float : right;
+	
+	height : 25px;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 0px 10px 0px 10px;
+	
+	font-size : 16px;
+	
+	border-width : 0px 0px 0px 0px;
+	
+	line-height : 25px;
+	
+	vertical-align : middle;
+	
+	border-style : solid;
+	border-color : #ffffff;
+	color : white;
+
+}
+
+.etape a {
+
+	display : block;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	
+	border-width : 2px;
+	
+	border-style : solid;
+	border-color : transparent;
+	
+	background-color : #eeeeee;
+	color : #555555;
+	
+	text-decoration : none;
+
+}
+
+.active a {
+
+	border-color : red;
+	
+	background-color : blue;
+	color : white;
+
+}
+
+.disponible a {
+
+	background-color : green;
+	color : white;
+
+}
+
+.etape a:hover {
+
+	cursor : pointer;
+
+}
+
+.disponible a:hover {
+
+	background-color : black;
+	color : white;
+
+}
+
+.etape a span.titre {
+
+	display : block;
+	
+	margin : 0px 0px 0px 5px;
+	padding : 5px 0px 0px 10px;
+	
+	font-size : 14px;
+	font-weight : bold;
+
+}
+
+.etape a span.description {
+
+	margin : 0px 0px 0px 5px;
+	padding : 0px 0px 5px 10px;
+	
+	font-size : 10px;
+	font-weight : normal;
+
+}
+
+.pagination {
+
+	padding : 10px 0px 0px 10px;
+
+}
+
+.pagination .compteur {
+
+	float : left;
+	
+	padding : 0px 0px 0px 10px;
+	
+	font-size : 16px;
+	font-weight : bold;
+	
+	line-height : 16px;
+	
+	text-align : left;
+	vertical-align : middle;
+
+}
+
+.pagination .boutons {
+
+	float : right;
+	
+	padding : 0px 0px 0px 0px;
+	
+	font-weight : normal;
+	
+	text-align : right;
+
+}
+
+
+/* Formulaires */
+.formulaire .champs {
+
+	width : 150px;
+	
+	text-align : right;
+
+}
+
+/* Filtre */
+#Filtre a {
+
+	color : #ffffff;
+
+}
+
+#Filtre .actif {
+
+	font-weight : bold;
+
+}

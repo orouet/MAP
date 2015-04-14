@@ -1,0 +1,136 @@
+.photo {
+
+	float : left;
+	
+	width : 180px;
+	
+	margin : 4px 4px 4px 4px;
+	padding : 5px 5px 5px 5px;
+	
+	border-width : 1px 1px 1px 1px;
+	
+	border-style : solid;
+	border-color : #cccccc #cccccc #cccccc #cccccc;
+	
+	text-align : center;
+	
+	background-color : white;
+	color : black;
+
+}
+
+.photo img {
+
+	width : 180px;
+	height : 120px;
+
+}
+
+.photo a {
+
+	display : block;
+	
+	
+	text-decoration : none;
+	
+	background-color : inherit;
+	color : inherit;
+
+}
+
+.photo .cartouche {
+
+	margin : 0px 0px 0px 0px;
+	padding : 5px 2px 5px 2px;
+
+}
+
+.photo .cartouche .titre {
+
+	font-weight : bold;
+	
+	text-align : left;
+
+}
+
+.photo .cartouche .note {
+
+	text-align : right;
+
+}
+
+.photo .cartouche .action {
+
+	width : auto;
+	
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	
+	text-align : right;
+
+}
+
+.selectionnee {
+
+	background-color : green;
+	color : white;
+
+}
+
+.commande {
+
+	width : 100%;
+	
+	font-size : 12px;
+
+}
+
+.commande th {
+
+	text-align : right;
+
+}
+
+.commande td {
+
+	padding : 0px 5px;
+
+}
+
+.commande td.libelle {
+
+	text-align : left;
+
+}
+
+.commande td.tarif {
+
+	width : 80px;
+	
+	text-align : right;
+
+}
+
+.commande td.quantite {
+
+	width : 100px;
+	
+	text-align : right;
+
+}
+
+.commande td.montant {
+
+	width : 80px;
+	
+	text-align : right;
+
+}
+
+.commande td.action {
+
+	width : 20px;
+	
+	text-align : center;
+
+}
