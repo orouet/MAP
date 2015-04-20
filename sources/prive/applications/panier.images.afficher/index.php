@@ -11,7 +11,9 @@ $image_type = 'JPEG';
 $document_id = false;
 $largeur = false;
 $hauteur = false;
-
+$r = 0;
+$g = 0;
+$b = 0;
 
 
 /* LECTURE DES ENTREES */
@@ -30,6 +32,24 @@ if (isset($_REQUEST['largeur']) && $_REQUEST['largeur'] !== '') {
 if (isset($_REQUEST['hauteur']) && $_REQUEST['hauteur'] !== '') {
 
 	$hauteur = (integer) $_REQUEST['hauteur'];
+
+}
+
+if (isset($_REQUEST['r']) && $_REQUEST['r'] !== '') {
+
+	$r = (integer) $_REQUEST['r'];
+
+}
+
+if (isset($_REQUEST['g']) && $_REQUEST['g'] !== '') {
+
+	$g = (integer) $_REQUEST['g'];
+
+}
+
+if (isset($_REQUEST['b']) && $_REQUEST['b'] !== '') {
+
+	$b = (integer) $_REQUEST['b'];
 
 }
 
@@ -162,7 +182,7 @@ if (file_exists($cible)) {
 
 	if (($largeur !== false) && ($hauteur !== false)) {
 	
-		$miniature = $largeur . 'x' . $hauteur . $extension;
+		$miniature = $largeur . 'x' . $hauteur . '-r' . $r . 'g' . $g . 'b' . $b . $extension;
 		
 		// On regarde dans le cache
 		$cache_lot = CHEMIN_CACHE . $document['lots_id'] . '/';
@@ -197,7 +217,17 @@ if (file_exists($cible)) {
 			
 			if ($lot_dir && $empreinte_dir) {
 			
-				$m = imagesMiniatureGenerer($cible, $cache_document, $largeur, $hauteur);
+				$Image = new GEP_Image($cible);
+				
+				$p = [
+					'cible' => $cache_document,
+					'largeur' => $largeur,
+					'hauteur' => $hauteur,
+					'r' => $r,
+					'g' => $g,
+					'b' => $b,
+				];
+				$m = $Image->redimensionner($p);
 				
 				if ($m === true) {
 				
@@ -219,24 +249,37 @@ if (file_exists($cible)) {
 	
 	}
 	
-	$etag = md5($cible);
+	$etag = sha1_file($cible);
 	
 	// Cache HTTP
 	$http_cache = false;
 	
-	if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])) {
+	// if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])) {
 	
-		header('HTTP/1.1 304 Not Modified');
-		header('Content-Length: 0');
-		$http_cache = true;
+		// header('HTTP/1.1 304 Not Modified');
+		// header('Content-Length: 0');
+		// $http_cache = true;
 	
-	}
+	// }
 	
-	if (!empty($_SERVER['HTTP_IF_NONE_MATCH']) && $_SERVER['HTTP_IF_NONE_MATCH'] == $etag) {
+	// die(var_dump($_SERVER));
 	
-		header('HTTP/1.1 304 Not Modified');
-		header('Content-Length: 0');
-		$http_cache = true;
+	if (isset($_SERVER['HTTP_IF_NONE_MATCH'])) {
+	
+		$reponse = ($_SERVER['HTTP_IF_NONE_MATCH']);
+		
+		// die ('Emission=' . $etag . ' / Réception=' . $reponse);
+		
+		$occurrences = strpos($reponse, $etag);
+		
+		if ($occurrences !== false) {
+		
+			header('HTTP/1.1 304 Not Modified');
+			header('Content-Length: 0');
+			$http_cache = true;
+			die();
+		
+		}
 	
 	}
 	

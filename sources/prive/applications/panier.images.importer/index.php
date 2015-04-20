@@ -32,11 +32,6 @@ require_once (CHEMIN_BIBLIOTHEQUES . 'fonctions.chaines.inc.php');
 require_once (CHEMIN_BIBLIOTHEQUES . 'fonctions.uuid.inc.php');
 require_once (CHEMIN_BIBLIOTHEQUES . 'fonctions.inc.php');
 
-require_once(CHEMIN_BIBLIOTHEQUES . 'ged.php');
-require_once(CHEMIN_BIBLIOTHEQUES . 'gep.php');
-
-require_once(CHEMIN_BIBLIOTHEQUES . 'motsdepasse.php');
-
 // Controleur de la GED (Gestion Electronique de Documents)
 $GED = new GED_Controleur(
 	SQL_SERVEUR,

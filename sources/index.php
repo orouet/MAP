@@ -87,6 +87,8 @@ function debug($variable, $message = '')
 // Début de la session
 @session_start();
 
+// Chargement des bibliothèques
+require_once(CHEMIN_BIBLIOTHEQUES . 'bibliotheques.php');
 
 // Chargement de l'environnement
 require_once(CHEMIN_ENVIRONNEMENTS . ENVIRONNEMENT . '.php');
@@ -109,7 +111,7 @@ if (($application != '') && is_dir(CHEMIN_APPLICATIONS . '/' . $application)) {
 
 } else {
 
-	define('APP', 'panier.images.lister');
+	define('APP', ENVIRONNEMENT_APP);
 
 }
 

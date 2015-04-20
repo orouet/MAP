@@ -64,8 +64,6 @@ require_once (CHEMIN_BIBLIOTHEQUES . 'fonctions.uuid.inc.php');
 require_once (CHEMIN_BIBLIOTHEQUES . 'fonctions.inc.php');
 require_once (CHEMIN_BIBLIOTHEQUES . 'fonctions.html.inc.php');
 
-require_once(CHEMIN_BIBLIOTHEQUES . 'gep.php');
-
 // Controleur de la GEP (Gestion Electronique de Photographies)
 $GEP = new GEP_Controleur(
 	SQL_SERVEUR,

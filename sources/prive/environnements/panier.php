@@ -1,6 +1,10 @@
 <?PHP
 
 
+// Application par défaut
+define('ENVIRONNEMENT_APP', 'panier.images.lister');
+
+
 /* PANIER */
 // Chargement des bibliothèques
 require_once(CHEMIN_BIBLIOTHEQUES . 'panier.php');
